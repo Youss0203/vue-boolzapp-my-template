@@ -1,39 +1,156 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-div.container{
+div.container {
     width: 80%;
-    height: 500px;
-    margin:0 auto;
+    margin: 0 auto;
     border: solid 2px black;
     display: flex;
 }
 
-section.contact{
-    width:30vw;
-    height: 100wh;
-    border:2px solid black
+section.contact {
+    width: 30vw;
+    height: 100%;
 }
 
-section.message{
-    width: calc(100vw - 30vw);
-    height: 100vh;
+section.message {
+    width: 70vw;
+    height: 100%;
 }
 
-div.io{
+div.io {
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid #B1B1B1;
+    background-color: #EAEAEA
+}
+
+
+img.my-io {
+    width: 13%;
+    border-radius: 50%;
+    margin-top: .2rem;
+    margin-left: .4rem
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 1rem 0;
+}
+
+li {
+    padding: 0 .4rem;
+}
+.fa-regular,
+.fa-solid {
+    color: #B1B1B1;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-left: .5rem;
+}
+
+div.message-alert {
+    background-color: #8EDAFC;
+    padding: .5rem 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.fa-bell-slash {
+    color: #8EDAFC;
+    padding-top: .7rem;
+}
+
+p.grassetto {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+p.sottolineato {
+    font-size: 13px;
+    color: #B1B1B1;
+    text-decoration: underline;
+}
+
+div.text-alert {
+    padding-left: .7rem;
+}
+
+.text-input {
+    height: 30px;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 90%;
+}
+.contatti{
+    border: solid 1px #EAEAEA;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+.info-contact{
+    padding-left:.7rem
+}
+
+.absolute{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.grey{
+    font-size: 13px;
+    color: #B1B1B1;
+}
+
+
+.header-message{
     display:flex;
     justify-content: space-between;
+    border:1px solid #EAEAEA;
+    background-color: #EAEAEA;
 }
 
-article.my-avatar{
-    height:50px;
-    border:1px solid grey;
+.flex{
+    display: flex;
+}
+
+.image-message{
+    border-radius: 50%;
+    width: 8%;
+}
+
+.mess{
+    padding:.96rem 0
 }
 
 img{
-    width:13%;
-    border-radius:50%
+    width: 100%;
+}
+
+.footer-message{
+    padding:1rem 0;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

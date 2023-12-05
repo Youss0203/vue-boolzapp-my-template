@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolzapp</title>
     <link rel="stylesheet" href="./style/stile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css ">
 </head>
 
 <body>
@@ -16,14 +17,65 @@
             <section class="contact">
                 <div class="io">
                     <article class="my-avatar">
-                        <img src="./image/avatar_io.jpg">
+                        <img class="my-io" src="./img/avatar_io.jpg">
                     </article>
                     <div class="icons">
-                        
+                        <ul>
+                            <li><i class="fa-solid fa-circle-notch"></i></li>
+                            <li><i class="fa-solid fa-message"></i></li>
+                            <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                        </ul>
                     </div>
                 </div>
+                <div class="message-alert">
+                    <div class="circle"><i class="fa-solid fa-bell-slash"></i></div>
+                    <div class="text-alert">
+                        <p class="grassetto">Ricevi notifiche di nuovi messaggi</p>
+                        <p class="sottolineato">Attiva notifiche dekstop</p>
+                    </div>
+                </div>
+                <div class="text-input">
+                    <input type="text" name="new-chat" id="new-chat"
+                        placeholder=" &#128269; Cerca o inizia una nuova chat">
+                </div>
+                <div class="contatti" v-for="(element,index) in contacts">
+                    <img class="my-io" :src="element.avatar">
+                    <div class="info-contact">
+                        <p class="grassetto">{{element.name}}</p>
+                        <p class="grey">Ultimo messaggio inviato</p>
+                    </div>
+                    <div>
+                        <p class="absolute grey">12.00</p>
+                    </div>
             </section>
-            <section class="message"></section>
+            <section class="message">
+                <div class="header-message">
+                    <div>
+                        <div class="flex">
+                            <img class="image-message" src="./img/avatar_1.jpg">
+                            <p class="grassetto">Michele</p>
+                            <p class="grey">Ultimo accesso alle ore 12.00</p>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <ul class="mess">
+                            <li><i class="fa-solid fa-circle-notch"></i></li>
+                            <li><i class="fa-solid fa-message"></i></li>
+                            <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-message">
+                    <img src="./img/mine.jpg">
+                </div>
+                <div class="footer-message">
+                    <div class="emoji"><i class="fa-regular fa-face-smile"></i></div>
+                    <div class="text-write">
+                        <input  type="text" placeholder="Scrivi un messaggio">
+                    </div>
+                    <div class="recorder"><i class="fa-solid fa-microphone"></i></div>
+                </div>
+            </section>
 
         </div>
     </div>
