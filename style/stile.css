@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+div.container{
+    width: 80%;
+    height: 500px;
+    margin:0 auto;
+    border: solid 2px black;
+    display: flex;
+}
+
+section.contact{
+    width:30vw;
+    height: 100wh;
+    border:2px solid black
+}
+
+section.message{
+    width: calc(100vw - 30vw);
+    height: 100vh;
+}
+
+div.io{
+    display:flex;
+    justify-content: space-between;
+}
+
+article.my-avatar{
+    height:50px;
+    border:1px solid grey;
+}
+
+img{
+    width:13%;
+    border-radius:50%
+}
